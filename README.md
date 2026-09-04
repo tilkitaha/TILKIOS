@@ -2,6 +2,20 @@
 
 TILKI OS is a working full-stack MVP for small-business decision management. It combines a command center with specialized Marketing, Sales, Finance, Operations, Inventory, and Analytics agents.
 
+## Product preview
+
+### Business command center
+
+![TILKI OS dashboard](docs/screenshots/dashboard.jpg)
+
+### AI Manager
+
+![TILKI OS AI Manager](docs/screenshots/ai-manager.jpg)
+
+### Human-in-the-loop approval
+
+![TILKI OS approval workflow](docs/screenshots/human-approval.jpg)
+
 ## MVP capabilities
 
 - Live business KPI dashboard
