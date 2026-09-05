@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#02060a">
+<title>TILKI CORE — Multilingual AI Command Center</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="scan"></div>
+<div id="welcome" class="overlay">
+  <div class="welcome">
+    <div class="mini"></div>
+    <h2>TILKI CORE</h2>
+    <p>Kişisel hedefini söyle. TILKI CORE onu görevlere dönüştürsün, cihazında hatırlasın ve günlük odak planını oluştursun.</p>
+    <div class="cards">
+      <button class="card" data-onboard="plan"><b>🎯 Hedef ver</b><small>Bir hedefi 5 adımlık plana dönüştür.</small></button>
+      <button class="card" data-onboard="remember"><b>🧠 Hafızayı dene</b><small>Adını söyle ve sistemin hatırlamasını gör.</small></button>
+      <button class="card" data-onboard="voice"><b>🎙️ Sesli komut</b><small>Mikrofondan konuşarak dene.</small></button>
+    </div>
+    <button id="enter" class="primary">KOMUTA MERKEZİNE GİR</button>
+  </div>
+</div>
+<div id="missionModal" class="modal">
+  <div class="mission">
+    <h3>🎯 Bir hedef ver</h3>
+    <p>TR / EN / PL / DE / ES / FR dillerinden biriyle hedefini yaz.</p>
+    <input id="goalInput" placeholder="Hedefini / your goal / twój cel…">
+    <div class="actions"><button id="planGoal" class="primary">5 ADIMLIK PLAN OLUŞTUR</button><button id="closeGoal" class="ghost">KAPAT</button></div>
+  </div>
+</div>
+<div class="shell">
+  <div class="top"><div class="brand"><small>ÇOK DİLLİ KİŞİSEL YAPAY ZEKA KOMUTA SİSTEMİ</small><h1>TILKI <em>CORE</em></h1></div><div class="status">ONLINE // AUTO LANGUAGE</div></div>
+  <div class="grid">
+    <section class="panel"><div class="head"><span>01 // SESLİ KOMUTA</span><span id="mode">HAZIR</span></div><div class="voice">
+      <div id="core" class="core"><div class="ring"></div><div class="ring r2"></div><div class="ring r3"></div><button id="orb" class="orb">KONUŞ</button></div>
+      <div id="heard">Ses kanalı hazır</div>
+      <form id="form"><div class="inputrow"><input id="input" autocomplete="off" placeholder="TR / EN / PL / DE / ES / FR — bir hedef yaz"><button class="send">GÖNDER</button></div></form>
+      <div class="quick"><button data-cmd="hedefimi planla">🎯 HEDEFİMİ PLANLA</button><button data-cmd="bugün ne yapmalıyım">⚡ BUGÜN NE YAPMALIYIM?</button><button data-cmd="hafızanda ne var">🧠 HAFIZA</button><button data-cmd="linkedin'i aç">↗ LINKEDIN</button></div>
+      <div class="examples">Otomatik dil algılama: Türkçe · English · Polski · Deutsch · Español · Français</div>
+      <div class="notice">Bu demo cihazınızda çalışır. Veriler tarayıcınızda tutulur; API anahtarı içermez.</div>
+    </div></section>
+    <section class="panel"><div class="head"><span>02 // AJAN KONSOLU</span><span id="identity">AUTO</span></div><div id="chat" class="chat"><div class="msg ai sys">TILKI CORE çevrimiçi. Dilini otomatik algılarım — bana bir hedef ver.</div></div></section>
+    <div class="side">
+      <section class="panel"><div class="head"><span>03 // GÖREV KUYRUĞU</span><span id="pct">0%</span></div><div class="stats"><div class="stat"><b id="open">0</b><small>AÇIK</small></div><div class="stat"><b id="done">0</b><small>TAMAM</small></div><div class="stat"><b id="notesN">0</b><small>HAFIZA</small></div></div><div class="progress"><span id="progressBar"></span></div><div id="tasks" class="list"></div></section>
+      <section class="panel"><div class="head">04 // HAFIZA KASASI</div><div id="notes" class="list"></div></section>
+    </div>
+    <section class="panel full"><div class="head">05 // CANLI ETKİNLİK AKIŞI</div><div id="activity" class="activity"></div></section>
+  </div>
+  <div class="footer">TILKI CORE — Multilingual Public AI Command Center Demo</div>
+</div>
+<script src="app1.js"></script>
+<script src="app2.js"></script>
+<script src="app3.js"></script>
+<script src="app4.js"></script>
+</body></html>
